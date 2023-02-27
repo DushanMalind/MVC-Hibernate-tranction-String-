@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="stockDeatilsAchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.computerShop.controller.DeatilsStockFromController">
+   <children>
+      <ImageView fitHeight="1096.0" fitWidth="1926.0" layoutX="-5.0" layoutY="-14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/tianyi-ma-WiONHd_zYI4-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="826.0" layoutY="33.0" prefHeight="74.0" prefWidth="630.0" text="            Stock Deatils From" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="44.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle2" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <Label layoutX="659.0" layoutY="188.0" prefHeight="457.0" prefWidth="340.0" style="-fx-background-color: #00a8ff;" styleClass="circle3" stylesheets="@../css/style.css" />
+      <Label layoutX="1035.0" layoutY="192.0" prefHeight="57.0" prefWidth="380.0" style="-fx-background-color: #00a8ff;" styleClass="circle3" stylesheets="@../css/style.css" />
+      <TextField layoutX="695.0" layoutY="274.0" prefHeight="46.0" prefWidth="287.0" promptText="StockId" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></TextField>
+      <TextField layoutX="695.0" layoutY="354.0" prefHeight="46.0" prefWidth="287.0" promptText="ItemId" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></TextField>
+      <TextField layoutX="689.0" layoutY="433.0" prefHeight="46.0" prefWidth="287.0" promptText="QtY" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></TextField>
+      <TextField layoutX="689.0" layoutY="512.0" prefHeight="46.0" prefWidth="287.0" promptText="Model Name" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></TextField>
+      <Button layoutX="693.0" layoutY="582.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: #FFBE7C;" styleClass="circle2" stylesheets="@../css/style.css" text="    Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="852.0" layoutY="582.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: #FFBE7C;" styleClass="circle2" stylesheets="@../css/style.css" text="  Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="655.0" layoutY="88.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="38.0" prefWidth="133.0" style="-fx-background-color: #F27900;" styleClass="circle2" stylesheets="@../css/style.css" text="Back Button" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="807.0" layoutY="211.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #FFBE7C;" styleClass="circle2" stylesheets="@../css/style.css" text="     +New Stock" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="1008.0" layoutY="259.0" prefHeight="347.0" prefWidth="751.0">
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle3" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <TableView fx:id="tblStockDetail" layoutX="1026.0" layoutY="280.0" prefHeight="307.0" prefWidth="713.0">
+         <columns>
+            <TableColumn fx:id="colStockId" prefWidth="127.0" text="StockId" />
+            <TableColumn fx:id="colSupId" prefWidth="165.0" text="SupId" />
+            <TableColumn fx:id="colQty" prefWidth="178.0" text="QTY" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="151.0" text="UnitPrice" />
+            <TableColumn fx:id="colOption" prefWidth="91.0" text="Option" />
+         </columns>
+      </TableView>
+      <TextField layoutX="1048.0" layoutY="198.0" prefHeight="46.0" prefWidth="352.0" promptText="search" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="822.0" layoutY="220.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/gift/icons8-homer-simpson.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="707.0" layoutY="591.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/gift/icons8-save-close.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="873.0" layoutY="590.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/gift/icons8-close.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="1361.0" layoutY="210.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/gift/icons8-search%20(3).gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

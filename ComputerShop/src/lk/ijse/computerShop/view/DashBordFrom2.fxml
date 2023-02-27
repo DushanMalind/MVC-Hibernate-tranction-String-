@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mealPackagesIdMain" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.computerShop.controller.DashBordFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="6.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/wallpaperflare.com_wallpaper%20(2).jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="pane" layoutX="6.0" layoutY="213.0" prefHeight="575.0" prefWidth="981.0" />
+      <Label layoutX="27.0" layoutY="38.0" prefHeight="899.0" prefWidth="382.0">
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="payload" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <Button layoutX="242.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnOrderPlaceOnAction" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="            Order Deatils" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="248.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-save-close.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="68.0" layoutY="203.0" mnemonicParsing="false" onAction="#btnOrderFrom" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="     Orders" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="76.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-create-order%20(1).gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="68.0" layoutY="126.0" mnemonicParsing="false" onAction="#btnItemFom" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="     Item" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="76.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-buy%20(1).gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="68.0" layoutY="282.0" mnemonicParsing="false" onAction="#btnOrederDeatils" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="            Order Deatils" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="74.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-create-order%20(2).gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="68.0" layoutY="385.0" mnemonicParsing="false" onAction="#btnSupplyerOnAction" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="           Supplyer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="74.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-homer-simpson.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="68.0" layoutY="462.0" mnemonicParsing="false" onAction="#btnStockOnAction" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="           Stock" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="76.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-stocks%20(1).gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="68.0" layoutY="540.0" mnemonicParsing="false" onAction="#btnDeatlsStockOnAction" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="           Stock Details" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="78.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-thumbnail-view%20(1).gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="236.0" layoutY="184.0" mnemonicParsing="false" onAction="#btnPlaceOrdersFrom" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="            Place Order" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="248.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-save.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="68.0" layoutY="628.0" mnemonicParsing="false" onAction="#btnEmpOnAction" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="           Employes" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="68.0" layoutY="707.0" mnemonicParsing="false" onAction="#btnServiceOnAction" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="           Servise" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="74.0" layoutY="642.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-budget-16.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="76.0" layoutY="715.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-customer-support-64.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="68.0" layoutY="782.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="           Income Report" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="64.0" layoutX="74.0" layoutY="796.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-thumbnail-view.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="68.0" layoutY="52.0" mnemonicParsing="false" onAction="#btnCustomerFrom" prefHeight="66.0" prefWidth="156.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="             Customer From" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="43.0" layoutX="76.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-online-support.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="526.0" layoutY="19.0" prefHeight="147.0" prefWidth="1025.0" text="    Computer Shop Mangement">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="title-text" />
+            <String fx:value="circle2" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+      </Label>
+      <Label fx:id="lblDateTime" layoutX="1715.0" layoutY="173.0" prefHeight="30.0" prefWidth="177.0" textFill="#ff0909">
+         <stylesheets>
+            <URL value="@../css/style2.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="root" />
+            <String fx:value="specialTextColour" />
+         </styleClass></Label>
+      <Button layoutX="1736.0" layoutY="810.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" prefHeight="49.0" prefWidth="135.0" style="-fx-background-color: #63cdda;" styleClass="circle2" stylesheets="@../css/style.css" text="Logut" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="1672.0" layoutY="167.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/gift/icons8-sand-timer.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

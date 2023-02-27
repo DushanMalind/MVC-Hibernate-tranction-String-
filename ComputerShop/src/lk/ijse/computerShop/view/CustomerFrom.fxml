@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mealPackagesId" layoutY="5.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.computerShop.controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="-7.0" layoutY="7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/wallpaperflare.com_wallpaper%20(1).jpg" />
+         </image></ImageView>
+      <Label layoutX="937.0" layoutY="37.0" prefHeight="62.0" prefWidth="563.0" style="-fx-background-color: #546de5;" text="               Customer From">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle" />
+            <String fx:value="topPaneBackgroundcolor" />
+         </styleClass>
+         <textFill>
+            <LinearGradient endX="0.2954545671289617" endY="0.4469696915510929">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="646.0" layoutY="129.0" prefHeight="456.0" prefWidth="406.0">
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle3" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <TextField fx:id="txtCustomerId" layoutX="665.0" layoutY="223.0" prefHeight="45.0" prefWidth="374.0" promptText="Customer ID" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="txtCustomerName" layoutX="665.0" layoutY="308.0" prefHeight="46.0" prefWidth="374.0" promptText="Customer Name" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="txtAddress" layoutX="665.0" layoutY="392.0" prefHeight="45.0" prefWidth="374.0" promptText="Customer Address" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="txtContact" layoutX="665.0" layoutY="468.0" prefHeight="46.0" prefWidth="374.0" promptText="Customer Contact" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></TextField>
+      <Button fx:id="btnCustomer" layoutX="678.0" layoutY="531.0" mnemonicParsing="false" onAction="#btnSaveCustomer" prefHeight="43.0" prefWidth="186.0" style="-fx-background-color: #ffffff;" styleClass="circle3" stylesheets="@../css/style.css" text="      Save Customer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="887.0" layoutY="530.0" mnemonicParsing="false" onAction="#btnClearDatan" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: #ffffff;" styleClass="circle3" stylesheets="@../css/style.css" text="  Clear Data">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="1064.0" layoutY="157.0" prefHeight="419.0" prefWidth="723.0" style="-fx-background-color: #00a8ff;" styleClass="circle3" stylesheets="@../css/style.css" />
+      <TableView fx:id="customerTable" editable="true" layoutX="1083.0" layoutY="238.0" prefHeight="294.0" prefWidth="685.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="154.0" text="CustID" />
+            <TableColumn fx:id="colName" minWidth="0.0" prefWidth="140.0" text="CusName" />
+            <TableColumn fx:id="colAddress" editable="false" minWidth="0.0" prefWidth="113.0" text="Address" />
+            <TableColumn fx:id="colContact" minWidth="0.0" prefWidth="134.0" text="Contact" />
+            <TableColumn fx:id="colOption" minWidth="0.0" prefWidth="133.0" text="Option" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="1080.0" layoutY="174.0" prefHeight="43.0" prefWidth="339.0" promptText="Serach" style="-fx-background-color: #ffffff;" styleClass="circle2" stylesheets="@../css/style.css">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></TextField>
+      <Button layoutX="674.0" layoutY="141.0" mnemonicParsing="false" onAction="#btnNewCustomer" prefHeight="33.0" prefWidth="186.0" style="-fx-background-color: #ffffff;" styleClass="circle3" stylesheets="@../css/style.css" text="    + New Customer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font></Button>
+      <Button layoutX="673.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnBackMainWindow" prefHeight="33.0" prefWidth="130.0" style="-fx-background-color: #F27900;" styleClass="circle3" stylesheets="@../css/style.css" text="Back Main Window" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblId" layoutX="678.0" layoutY="196.0" prefHeight="20.0" prefWidth="120.0" textFill="RED" />
+      <Label fx:id="lblName" layoutX="678.0" layoutY="278.0" prefHeight="20.0" prefWidth="120.0" textFill="RED" />
+      <Label fx:id="lblAddress" layoutX="670.0" layoutY="365.0" prefHeight="20.0" prefWidth="120.0" textFill="RED" />
+      <Label fx:id="lblContact" layoutX="670.0" layoutY="448.0" prefHeight="20.0" prefWidth="120.0" textFill="RED" />
+      <ImageView fitHeight="20.0" fitWidth="22.0" layoutX="685.0" layoutY="543.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/gift/icons8-save-close%20(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="22.0" layoutX="898.0" layoutY="542.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/gift/icons8-close.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="22.0" layoutX="685.0" layoutY="148.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/gift/icons8-online-support.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="22.0" layoutX="1386.0" layoutY="186.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/gift/icons8-search%20(3).gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

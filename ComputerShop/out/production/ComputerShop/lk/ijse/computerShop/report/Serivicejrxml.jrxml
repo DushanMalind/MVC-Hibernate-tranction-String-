@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Serivicejrxml" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5a99e94b-aa7e-4971-9b95-cbe5ce3e920b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MyDatabase"/>
+	<queryString language="SQL">
+		<![CDATA[select *from servise]]>
+	</queryString>
+	<field name="serviseId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="serviseId"/>
+		<property name="com.jaspersoft.studio.field.label" value="serviseId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="servise"/>
+	</field>
+	<field name="partName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="partName"/>
+		<property name="com.jaspersoft.studio.field.label" value="partName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="servise"/>
+	</field>
+	<field name="empId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="empId"/>
+		<property name="com.jaspersoft.studio.field.label" value="empId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="servise"/>
+	</field>
+	<field name="price" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="price"/>
+		<property name="com.jaspersoft.studio.field.label" value="price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="servise"/>
+	</field>
+	<group name="serviseId">
+		<groupExpression><![CDATA[$F{serviseId}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="162" y="0" width="228" height="44" uuid="a08e1a11-3047-4fa7-ba9f-72b9fcdfe7a2"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Service From]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="24" width="160" height="30" uuid="703effb3-9d33-472f-b2bf-77a29fe6a380"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TECH Computer Shop]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="e051bd03-43cb-49f6-b472-9df35e2beb71">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="33281ac8-aec7-48e5-99fa-882af3a1d4a2"/>
+				</reportElement>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ServiseId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="0" width="100" height="30" uuid="5696a371-ce86-4804-90d7-eb550dc1cd6e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1a3656a5-edf8-4223-9085-7d29ec181b8e"/>
+				</reportElement>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PartName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="30" uuid="da8fc44f-e957-4a25-8857-e8024e54dffa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="81bd3776-0f31-48ab-9971-0b06e75d53cb"/>
+				</reportElement>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EmpId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="100" height="30" uuid="296557b8-b26b-47d9-b5b5-8d1fd8c26278">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="878ff29c-3ffc-4895-b702-bb2dc39b8f11"/>
+				</reportElement>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="55" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="100" height="30" uuid="cc8ba6fb-ebda-48da-a2c8-a0ba316519a4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="33281ac8-aec7-48e5-99fa-882af3a1d4a2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{serviseId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="20" width="100" height="30" uuid="97e46580-c1b0-43cb-ad4b-b3d970442975">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1a3656a5-edf8-4223-9085-7d29ec181b8e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{partName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="20" width="100" height="30" uuid="835f691a-32fb-44e1-a4fc-1568dca20fdc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="81bd3776-0f31-48ab-9971-0b06e75d53cb"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{empId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="20" width="100" height="30" uuid="23400c49-13aa-4d87-b81b-b65d6ec05021">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="878ff29c-3ffc-4895-b702-bb2dc39b8f11"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

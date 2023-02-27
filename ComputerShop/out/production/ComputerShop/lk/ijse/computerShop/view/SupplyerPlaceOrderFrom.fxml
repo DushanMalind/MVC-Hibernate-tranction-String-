@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="supplyerAnchorPPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.computerShop.controller.SupplyerPlaceOrderFromController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="104.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/wallpaperflare.com_wallpaper%20(4).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="843.0" layoutY="30.0" prefHeight="65.0" prefWidth="485.0" text="    Supplyer Order From" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle2" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <Label layoutX="548.0" layoutY="183.0" prefHeight="258.0" prefWidth="1033.0" style="-fx-background-color: #00a8ff;" styleClass="circle3" stylesheets="@../css/style.css" />
+      <Label layoutX="485.0" layoutY="452.0" prefHeight="248.0" prefWidth="1201.0">
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle3" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <Label layoutX="573.0" layoutY="117.0" prefHeight="48.0" prefWidth="190.0">
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle3" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <Label layoutX="1361.0" layoutY="117.0" prefHeight="48.0" prefWidth="200.0">
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle3" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <TextField fx:id="txtStockId" disable="true" editable="false" layoutX="583.0" layoutY="122.0" prefHeight="37.0" prefWidth="169.0" promptText="StockId">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font></TextField>
+      <TextField fx:id="txtStockDate" disable="true" editable="false" layoutX="1376.0" layoutY="122.0" prefHeight="37.0" prefWidth="169.0" promptText="StockDate">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font></TextField>
+      <Button layoutX="609.0" layoutY="52.0" mnemonicParsing="false" onAction="#btnBackWindow" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #F27900;" styleClass="circle2" stylesheets="@../css/style.css" text="Back Window" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="586.0" layoutY="291.0" prefHeight="30.0" prefWidth="169.0" text="Supplyer Deatils">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="586.0" layoutY="188.0" prefHeight="30.0" prefWidth="169.0" text="Item Deatils">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmdItemId" layoutX="586.0" layoutY="236.0" prefHeight="37.0" prefWidth="169.0" promptText="ItemId" />
+      <ComboBox fx:id="cmdSupId" layoutX="586.0" layoutY="339.0" prefHeight="37.0" prefWidth="169.0" promptText="SupId" />
+      <TextField fx:id="txtDescription" disable="true" editable="false" layoutX="785.0" layoutY="236.0" prefHeight="37.0" prefWidth="178.0" promptText="Description">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtItemUnitPrice" disable="true" editable="false" layoutX="991.0" layoutY="236.0" prefHeight="37.0" prefWidth="349.0" promptText="UnitPrice">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtQtyOn" disable="true" editable="false" layoutX="1359.0" layoutY="236.0" prefHeight="37.0" prefWidth="178.0" promptText="QTYOnHand">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtSupName" disable="true" editable="false" layoutX="797.0" layoutY="339.0" prefHeight="37.0" prefWidth="178.0" promptText="Name">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtSuppUnitPrice" disable="true" editable="false" layoutX="1000.0" layoutY="339.0" prefHeight="37.0" prefWidth="178.0" promptText="UnitPrice">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtModel" disable="true" editable="false" layoutX="1181.0" layoutY="339.0" prefHeight="37.0" prefWidth="178.0" promptText="Model">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtByQty" layoutX="1374.0" layoutY="339.0" prefHeight="37.0" prefWidth="178.0" promptText="Qty">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <Button layoutX="1385.0" layoutY="395.0" mnemonicParsing="false" onAction="#btnAddCartOnAction" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #FFBE7C;" styleClass="circle3" stylesheets="@../css/style.css" text="Add Cart">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <TableView fx:id="tblSupplyerPlace" layoutX="506.0" layoutY="468.0" prefHeight="183.0" prefWidth="1160.0">
+        <columns>
+          <TableColumn fx:id="colSupId" prefWidth="170.0" text="SupId" />
+          <TableColumn fx:id="colName" prefWidth="205.0" text="Name" />
+            <TableColumn fx:id="colModel" prefWidth="213.0" text="Model" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="169.0" text="Unitprice" />
+            <TableColumn fx:id="colQTY" prefWidth="141.0" text="QTY" />
+            <TableColumn fx:id="colTotal" prefWidth="130.4000244140625" text="Total" />
+            <TableColumn fx:id="colOption" prefWidth="125.60009765625" text="Option" />
+        </columns>
+      </TableView>
+      <Label layoutX="538.0" layoutY="651.0" prefHeight="38.0" prefWidth="102.0" text="Total" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="650.0" layoutY="652.0" prefHeight="38.0" prefWidth="143.0" text="0.00" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="1494.0" layoutY="653.0" mnemonicParsing="false" onAction="#placeOrderOnAction" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #FFBE7C;" styleClass="circle2" stylesheets="@../css/style.css" text="Place Item" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

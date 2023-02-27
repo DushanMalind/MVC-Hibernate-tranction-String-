@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.computerShop.controller.AboutFromController">
+   <children>
+      <ImageView fitHeight="1097.0" fitWidth="1987.0" layoutX="-53.0" layoutY="-14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/wallpaperflare.com_wallpaper%20(1).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="885.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/computer/icons8-monitor-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="65.0" layoutX="814.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/computer/icons8-computer-64%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="65.0" layoutX="1029.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/computer/icons8-computer-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="745.0" layoutY="164.0" prefHeight="65.0" prefWidth="558.0" styleClass="circle3" stylesheets="@../css/style.css" text=" ...TEC COMPUTERS                                                                          " textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="537.0" layoutY="254.0" prefHeight="479.0" prefWidth="354.0" styleClass="circle3" stylesheets="@../css/style.css" />
+      <Label layoutX="923.0" layoutY="250.0" prefHeight="347.0" prefWidth="841.0" styleClass="circle3" stylesheets="@../css/style.css" />
+      <Label layoutX="936.0" layoutY="366.0" prefHeight="40.0" prefWidth="360.0" text="Information Technology is the most information factor in this era.">
+         <font>
+            <Font name="Arial Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="1285.0" layoutY="366.0" prefHeight="40.0" prefWidth="467.0" text="Many organizations Provide different type of technologies and services for their clients.">
+         <font>
+            <Font name="Arial Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="1123.0" layoutY="261.0" prefHeight="40.0" prefWidth="360.0" text="    Computer Technologies">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="940.0" layoutY="394.0" prefHeight="40.0" prefWidth="650.0" text="Clients get services Form service providers to achieve their targets more easily and efficiency adapting new Technologies.">
+         <font>
+            <Font name="Arial Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="1014.0" layoutY="462.0" prefHeight="49.0" prefWidth="98.0" text="CONTACT US">
+         <font>
+            <Font name="Arial Bold Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="943.0" layoutY="301.0" prefHeight="49.0" prefWidth="360.0" styleClass="circle2" stylesheets="@../css/style.css" text=" ...WLCOME TO SHOP                                                    " textFill="#00ff55">
+         <font>
+            <Font name="Rockwell" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="1154.0" layoutY="447.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/computer/icons8-facebook-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="1240.0" layoutY="447.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/computer/icons8-facebook-messenger-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="1324.0" layoutY="447.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/computer/icons8-instagram-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="1425.0" layoutY="447.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/computer/icons8-youtube-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="1520.0" layoutY="447.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/computer/icons8-whatsapp-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="209.0" fitWidth="209.0" layoutX="605.0" layoutY="261.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/computer/icons8-monitor%20(2).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="268.0" layoutX="568.0" layoutY="494.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/computer/icons8-monitor%20(1).gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

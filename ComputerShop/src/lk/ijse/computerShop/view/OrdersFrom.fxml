@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OrdersAcnhor" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.computerShop.controller.OrdersFromController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/tianyi-ma-WiONHd_zYI4-unsplash.jpg" />
+         </image></ImageView>
+      <Label layoutX="568.0" layoutY="297.0" prefHeight="313.0" prefWidth="370.0" style="-fx-background-color: #00a8ff;" styleClass="circle3" stylesheets="@../css/style.css" />
+      <Label layoutX="922.0" layoutY="16.0" prefHeight="89.0" prefWidth="567.0" text="         Orders From" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="50.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style2.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle3" />
+            <String fx:value="content-section" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <TextField fx:id="txtOrdId" layoutX="589.0" layoutY="315.0" prefHeight="42.0" prefWidth="326.0" promptText="ordId" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font></TextField>
+      <TextField fx:id="txtCusid" layoutX="590.0" layoutY="439.0" prefHeight="42.0" prefWidth="326.0" promptText="ordCusId" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font></TextField>
+      <TextField fx:id="txtOrdDate" layoutX="590.0" layoutY="378.0" prefHeight="42.0" prefWidth="326.0" promptText="ordDate" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font></TextField>
+      <Label layoutX="977.0" layoutY="211.0" prefHeight="66.0" prefWidth="326.0" style="-fx-background-color: #00a8ff;" styleClass="circle3" stylesheets="@../css/style.css" />
+      <Button layoutX="590.0" layoutY="522.0" mnemonicParsing="false" onAction="#btnOnAction" prefHeight="42.0" prefWidth="157.0" styleClass="circle2" stylesheets="@../css/style.css" text="       Save Order">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Button disable="true" layoutX="770.0" layoutY="522.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="146.0" styleClass="circle2" stylesheets="@../css/style.css" text="             Clear">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="678.0" layoutY="39.0" mnemonicParsing="false" onAction="#btnBackWindo" prefHeight="42.0" prefWidth="131.0" style="-fx-background-color: #FF9021;" styleClass="circle2" stylesheets="@../css/style.css" text="Back Window" textFill="#ececec">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Button>
+      <ImageView fitHeight="42.0" fitWidth="30.0" layoutX="599.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo/icons8-monitor.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="30.0" layoutX="796.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo/icons8-gift.gif" />
+         </image>
+      </ImageView>
+      <Button disable="true" layoutX="783.0" layoutY="223.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="131.0" style="-fx-background-color: #FF9021;" styleClass="circle2" stylesheets="@../css/style.css" text="+ New Oredr">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="959.0" layoutY="296.0" prefHeight="332.0" prefWidth="718.0">
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle3" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <TableView fx:id="ordersTable" layoutX="984.0" layoutY="315.0" prefHeight="281.0" prefWidth="673.0">
+        <columns>
+          <TableColumn fx:id="colOrdId" prefWidth="201.0" text="OrdID" />
+          <TableColumn fx:id="colOrdDate" minWidth="1.0" prefWidth="198.0" text="OrdDate" />
+            <TableColumn fx:id="colOrdCusId" minWidth="1.0" prefWidth="154.0" text="OrdCusid" />
+            <TableColumn fx:id="colOption" minWidth="1.0" prefWidth="154.0" text="Option" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="984.0" layoutY="223.0" prefHeight="42.0" prefWidth="298.0" promptText="Serach" style="-fx-background-color: #f5f6fa;" styleClass="circle2" stylesheets="@../css/style.css">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font></TextField>
+      <ImageView fitHeight="42.0" fitWidth="30.0" layoutX="1231.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gift/icons8-search.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.computerShop.controller.ReportFromController">
+   <children>
+      <ImageView fitHeight="1086.0" fitWidth="1927.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/wallpaperflare.com_wallpaper%20(3).jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="672.0" layoutY="194.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="143.0" prefWidth="251.0" text="Customer Report">
+         <styleClass>
+            <String fx:value="circle2" />
+            <String fx:value="my-btn-class" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font></Button>
+      <Button layoutX="1177.0" layoutY="194.0" mnemonicParsing="false" onAction="#btnSupplyerOnAction" prefHeight="143.0" prefWidth="251.0" text="Supplyer Report">
+         <styleClass>
+            <String fx:value="circle2" />
+            <String fx:value="my-btn-class" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font></Button>
+      <Button layoutX="672.0" layoutY="433.0" mnemonicParsing="false" onAction="#btnServiceReport" prefHeight="143.0" prefWidth="251.0" text="Service Report">
+         <styleClass>
+            <String fx:value="circle2" />
+            <String fx:value="my-btn-class" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font></Button>
+      <Button layoutX="1177.0" layoutY="433.0" mnemonicParsing="false" onAction="#btnItemReport" prefHeight="143.0" prefWidth="251.0" text="ItemReport">
+         <styleClass>
+            <String fx:value="circle2" />
+            <String fx:value="my-btn-class" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font></Button>
+      <Label layoutX="666.0" layoutY="47.0" prefHeight="73.0" prefWidth="655.0" style="-fx-background-color: blue;" styleClass="circle3" stylesheets="@../css/style.css" text="            Report Deatils" textFill="#ff0505">
+         <font>
+            <Font name="Arial Bold" size="50.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

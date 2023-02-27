@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="placeAccorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.computerShop.controller.PlaceOrderFromController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/wallpaperflare.com_wallpaper%20(5).jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="571.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnBackWindow" prefHeight="37.0" prefWidth="164.0" style="-fx-background-color: #F27900;" styleClass="circle2" stylesheets="@../css/style.css" text="Back to Window">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="791.0" layoutY="22.0" prefHeight="54.0" prefWidth="527.0" text="            Place Order From">
+         <font>
+            <Font name="Arial Bold" size="38.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="circle3" />
+            <String fx:value="specialTextColour" />
+         </styleClass>
+      </Label>
+      <Label layoutX="548.0" layoutY="155.0" prefHeight="298.0" prefWidth="951.0" style="-fx-background-color: #8c7ae6;" styleClass="circle3" stylesheets="@../css/style.css" />
+      <Label layoutX="554.0" layoutY="460.0" prefHeight="281.0" prefWidth="962.0" style="-fx-background-color: #00a8ff;" styleClass="circle3" stylesheets="@../css/style.css" />
+      <Label layoutX="553.0" layoutY="94.0" prefHeight="54.0" prefWidth="213.0" style="-fx-background-color: #FFD5AA;" styleClass="circle3">
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+      </Label>
+      <Label layoutX="1198.0" layoutY="95.0" prefHeight="54.0" prefWidth="213.0" style="-fx-background-color: #FFD5AA;" styleClass="circle3">
+         <stylesheets>
+            <URL value="@../css/style.css" />
+            <URL value="@../css/style3.css" />
+         </stylesheets>
+      </Label>
+      <TextField fx:id="txtOrderId" disable="true" editable="false" layoutX="567.0" layoutY="100.0" prefHeight="37.0" prefWidth="176.0" promptText="OrdId">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font></TextField>
+      <TextField fx:id="txtDate" disable="true" editable="false" layoutX="1217.0" layoutY="101.0" prefHeight="37.0" prefWidth="176.0" promptText="Order Date">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font></TextField>
+      <Label layoutX="571.0" layoutY="169.0" prefHeight="38.0" prefWidth="176.0" text="Customer Deatils" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></Label>
+      <ComboBox fx:id="cmdCustomerIds" layoutX="571.0" layoutY="230.0" prefHeight="37.0" prefWidth="187.0" promptText="Customer Id" style="-fx-background-color: #f5f6fa;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <TextField fx:id="txtName" disable="true" editable="false" layoutX="764.0" layoutY="230.0" prefHeight="37.0" prefWidth="176.0" promptText="Name" style="-fx-background-color: #f5f6fa;">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtAddress" disable="true" editable="false" layoutX="946.0" layoutY="230.0" prefHeight="37.0" prefWidth="358.0" promptText="Address">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtContact" disable="true" editable="false" layoutX="1315.0" layoutY="230.0" prefHeight="37.0" prefWidth="176.0" promptText="Contact">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <Label layoutX="573.0" layoutY="287.0" prefHeight="37.0" prefWidth="164.0" text="Item Deatils" textFill="#ff0303">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></Label>
+      <ComboBox fx:id="cmdItemIds" layoutX="573.0" layoutY="348.0" prefHeight="37.0" prefWidth="187.0" promptText="Item Code" style="-fx-background-color: #f5f6fa;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <TextField fx:id="txtDescription" disable="true" editable="false" layoutX="766.0" layoutY="348.0" prefHeight="37.0" prefWidth="176.0" promptText="Description">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtUnitPrice" disable="true" editable="false" layoutX="948.0" layoutY="348.0" prefHeight="37.0" prefWidth="176.0" promptText="UnitPrice">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtQty" disable="true" editable="false" layoutX="1131.0" layoutY="348.0" prefHeight="37.0" prefWidth="176.0" promptText="QtyOnHand">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="txtQtyOnHand" layoutX="1315.0" layoutY="348.0" prefHeight="37.0" prefWidth="176.0" promptText="QtyOnHand">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></TextField>
+      <TableView fx:id="tblCart" layoutX="579.0" layoutY="471.0" prefHeight="212.0" prefWidth="915.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="157.0" text="Item Code" />
+          <TableColumn fx:id="colDescription" prefWidth="151.0" text="Description" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="151.0" text="UnitPrice" />
+            <TableColumn fx:id="colQty" prefWidth="151.0" text="QTY" />
+            <TableColumn fx:id="colTotal" prefWidth="151.0" text="Total" />
+            <TableColumn fx:id="colOption" prefWidth="151.0" text="Option" />
+        </columns>
+      </TableView>
+      <Button layoutX="1315.0" layoutY="403.0" mnemonicParsing="false" onAction="#addToCartOnAction" prefHeight="37.0" prefWidth="127.0" style="-fx-background-color: #FFA74F;" styleClass="circle2" stylesheets="@../css/style.css" text="Addto Cart">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="579.0" layoutY="696.0" prefHeight="37.0" prefWidth="127.0" text="Total">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font></Label>
+      <Label fx:id="lblTotal" layoutX="655.0" layoutY="696.0" prefHeight="37.0" prefWidth="136.0" text="   0.00" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></Label>
+      <Button layoutX="1355.0" layoutY="696.0" mnemonicParsing="false" onAction="#PlaceOrdeOnAction" prefHeight="37.0" prefWidth="136.0" style="-fx-background-color: #FFBE7C;" styleClass="circle2" stylesheets="@../css/style.css" text="Palace Order">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
