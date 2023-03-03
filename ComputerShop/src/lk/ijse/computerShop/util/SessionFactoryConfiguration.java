@@ -24,6 +24,7 @@ public class SessionFactoryConfiguration {
         }catch (Exception e){
             e.printStackTrace();
         }
+//        AddAnnotatedClass Set
         Configuration configuration=new Configuration();
         configuration.addAnnotatedClass(Customer.class);
 //        configuration.addAnnotatedClass(Item.class);
