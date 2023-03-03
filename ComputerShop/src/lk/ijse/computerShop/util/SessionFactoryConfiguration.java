@@ -17,6 +17,7 @@ public class SessionFactoryConfiguration {
     private SessionFactoryConfiguration(){
         Properties properties=new Properties();
 
+//        hibernate.properties fill set
         try {
             properties.load(ClassLoader.getSystemClassLoader().getResourceAsStream("hibernate.properties"));
 
