@@ -11,7 +11,7 @@ public class CustomerRepository {
     public CustomerRepository(){
         session= SessionFactoryConfiguration.getInstance().getSession();
     }
-
+//      truncation
     public String saveCustomer(Customer customer){
         Transaction transaction=session.beginTransaction();
         String id=" ";
